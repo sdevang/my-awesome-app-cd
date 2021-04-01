@@ -10,7 +10,7 @@ spec:
   strategy:
     blueGreen:
       activeService: my-awesome-app
-      previewService: my-awesome-app-preview
+      # previewService: my-awesome-app-preview
       # previewReplicaCount: 1
       autoPromotionEnabled: false
   template:
