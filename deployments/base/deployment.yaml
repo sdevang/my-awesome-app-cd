@@ -1,5 +1,5 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
 metadata:
   name: my-awesome-app
 spec:
@@ -7,6 +7,12 @@ spec:
   selector:
     matchLabels:
       app: my-awesome-app
+  strategy:
+    blueGreen:
+      activeService: my-awesome-app
+      previewService: my-awesome-app-preview
+      previewReplicaCount: 1
+      autoPromotionEnabled: false
   template:
     metadata:
       labels:
