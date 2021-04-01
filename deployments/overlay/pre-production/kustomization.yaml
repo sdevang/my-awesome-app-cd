@@ -7,3 +7,7 @@ kind: Kustomization
 resources:
 - ../../base
 namespace: default
+images:
+- name: sdevang/my-awesome-app
+  newName: sdevang/my-awesome-app
+  newTag: 0.1.0
