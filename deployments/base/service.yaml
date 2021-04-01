@@ -16,7 +16,7 @@ metadata:
   name: my-awesome-app-preview
 spec:
   selector:
-    app: my-awesome-app
+    app: my-awesome-app-preview
   ports:
   - port: 80
     targetPort: 5001
