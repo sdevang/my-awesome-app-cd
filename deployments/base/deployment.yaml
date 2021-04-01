@@ -11,7 +11,7 @@ spec:
     blueGreen:
       activeService: my-awesome-app
       previewService: my-awesome-app-preview
-      previewReplicaCount: 1
+      # previewReplicaCount: 1
       autoPromotionEnabled: false
   template:
     metadata:
