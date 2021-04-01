@@ -10,4 +10,4 @@ namespace: default
 images:
 - name: sdevang/my-awesome-app
   newName: sdevang/my-awesome-app
-  newTag: 0.1.0
+  newTag: 0.2.0
