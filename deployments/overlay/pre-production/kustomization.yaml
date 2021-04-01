@@ -1,15 +1,15 @@
 commonLabels:
   env: pre-production
-patchesStrategicMerge:
-- replica_count.yaml
+# patchesStrategicMerge:
+# - replica_count.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 configurations:
   - https://argoproj.github.io/argo-rollouts/features/kustomize/rollout-transform.yaml
-resources:
-- ../../base
-namespace: default
-images:
-- name: sdevang/my-awesome-app
-  newName: sdevang/my-awesome-app
-  newTag: 0.2.0
+# resources:
+# - ../../base
+# namespace: default
+# images:
+# - name: sdevang/my-awesome-app
+#   newName: sdevang/my-awesome-app
+#   newTag: 0.2.0
