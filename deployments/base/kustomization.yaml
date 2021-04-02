@@ -1,5 +1,5 @@
 commonLabels:
   app: my-awesome-app
 resources:
-# - deployment.yaml
+- deployment.yaml
 - service.yaml

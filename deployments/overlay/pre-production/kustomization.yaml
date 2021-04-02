@@ -1,7 +1,7 @@
 commonLabels:
   env: pre-production
-# patchesStrategicMerge:
-# - replica_count.yaml
+patchesStrategicMerge:
+- replica_count.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 configurations:
